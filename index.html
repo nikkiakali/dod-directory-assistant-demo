@@ -2,14 +2,26 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>DoD Directory Assistant</title>
-    <script src="https://cloud.google.com/ai/gen-app-builder/client?hl=en_US"></script>
+
+    <script src="https://cloud.google.com/ai/gen-app-builder/client.js?hl=en_US"></script>
+
     <style>
-      body { font-family: Arial, sans-serif; max-width: 900px; margin: 40px auto; padding: 0 16px; }
-      #searchWidgetTrigger { width: 100%; padding: 14px; font-size: 16px; }
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 900px;
+        margin: 40px auto;
+        padding: 0 16px;
+      }
+      #searchWidgetTrigger {
+        width: 100%;
+        padding: 14px;
+        font-size: 16px;
+      }
     </style>
   </head>
+
   <body>
     <h2>DoD Directory Assistant</h2>
     <p>Type a question and press Enter.</p>
@@ -19,6 +31,8 @@
       triggerId="searchWidgetTrigger">
     </gen-search-widget>
 
-    <input id="searchWidgetTrigger" placeholder="Ask about DoD personnel, roles, orgs…" />
+    <input
+      id="searchWidgetTrigger"
+      placeholder="Ask about DoD personnel, roles, orgs…" />
   </body>
 </html>
