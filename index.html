@@ -7,7 +7,6 @@
 
     <script src="https://vertexaisearch.cloud.google.com/ai/gen-app-builder/client?hl=en_US"></script>
 
-
     <style>
       body {
         font-family: Arial, sans-serif;
@@ -35,5 +34,12 @@
     <input
       id="searchWidgetTrigger"
       placeholder="Ask about DoD personnel, roles, orgs…" />
+
+    <script>
+      const t = document.getElementById("searchWidgetTrigger");
+      t.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") t.click();
+      });
+    </script>
   </body>
 </html>
